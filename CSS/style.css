@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+:root {
+  --firstColor: #90a4be; /* Cadet Gray*/
+  --secondColor: #212f49; /* Blue*/
+  --thirdColor: #0d1b2a; /*Rich Black*/
+  --FourthColor: #4a6481; /*Paynes Gray*/
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredoka";
+}
+
+.header-container {
+  width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+@media screen and (max-width: 1200px) {
+  .header-container {
+    width: 90%;
+  }
+}
+
+.header-logo {
+  font-weight: 600;
+  color: #212f49;
+  margin: 1rem 0;
+}
+.header-logo span {
+  color: #4a6481;
+}
+a {
+  text-decoration: none;
+}
+
+.header-nav {
+  display: flex;
+  gap: 3rem;
+}
+.header-nav a {
+  color: #0d1b2a;
+}
+
+/* Burger Nav */
+.burgerNav div {
+  width: 28px;
+  height: 3px;
+  background-color: #0d1b2a;
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+.burger {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 35px;
+  right: 35px;
+}
+
+#home-section {
+  width: 1200px;
+  height: 480px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+main .home-article .image-homeArticle {
+  flex: 1 1;
+}
+@media screen and (max-width: 1200px) {
+  #home-section {
+    width: 90%;
+  }
+}
+
+.small-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #90a4be;
+  position: relative;
+  padding-left: 40px;
+  width: fit-content;
+  font-weight: 400;
+}
+.small-title::before {
+  content: "";
+  width: 35px;
+  height: 1.5px;
+  background: #90a4be;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+}
+.tombol {
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-family: "Fredoka";
+  font-weight: 500;
+  border: solid #212f49 2px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.cv-button {
+  background-color: white;
+}
+.cv-button:hover {
+  background-color: #212f49;
+  color: white;
+}
+.github-button {
+  background-color: #212f49;
+}
+.github-button a {
+  color: white;
+}
+.github-button:hover {
+  background-color: #0d1b2a;
+  border-color: #0d1b2a;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0.5rem 0 1rem;
+}
+.home-title span {
+  color: #4a6481;
+}
+
+.image-homeArticle img {
+  width: 620px;
+}
