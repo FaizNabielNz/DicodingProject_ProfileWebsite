@@ -48,16 +48,22 @@ h6 {
 .header-logo span {
   color: #4a6481;
 }
-a {
+.head-nav {
+  color: #0d1b2a;
+  font-family: "Fredoka";
+  font-size: 1.2rem;
+  font-weight: 400;
   text-decoration: none;
+}
+.head-nav:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  color: #90a4be;
 }
 
 .header-nav {
   display: flex;
   gap: 3rem;
-}
-.header-nav a {
-  color: #0d1b2a;
 }
 
 /* Burger Nav */
@@ -77,9 +83,9 @@ a {
   right: 35px;
 }
 
-#home-section {
+#homeSection {
   width: 1200px;
-  height: 480px;
+  height: 600px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -139,6 +145,7 @@ main .home-article .image-homeArticle {
 }
 .github-button a {
   color: white;
+  text-decoration: none;
 }
 .github-button:hover {
   background-color: #0d1b2a;
@@ -155,5 +162,5 @@ main .home-article .image-homeArticle {
 }
 
 .image-homeArticle img {
-  width: 620px;
+  width: 600px;
 }
