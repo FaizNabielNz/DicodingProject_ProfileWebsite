@@ -7,6 +7,11 @@
   --thirdColor: #0d1b2a; /*Rich Black*/
   --FourthColor: #4a6481; /*Paynes Gray*/
 }
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -15,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  color: #0d1b2a;
 }
 h1,
 h2,
@@ -24,7 +30,11 @@ h5,
 h6 {
   font-family: "Fredoka";
 }
+.section-title {
+  margin: 1rem 0 4rem;
+}
 
+/* Header Section */
 .header-container {
   width: 1200px;
   margin: 0 auto;
@@ -73,19 +83,20 @@ h6 {
   background-color: #0d1b2a;
   margin: 7px;
   transition: all 0.3s;
-  z-index: 99;
+  z-index: 999;
 }
 .burger {
   display: none;
-  z-index: 99;
+  z-index: 999;
   position: fixed;
   top: 35px;
   right: 35px;
 }
 
-#homeSection {
+/* Home Section */
+#home-section {
   width: 1200px;
-  height: 600px;
+  height: 620px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -101,12 +112,14 @@ main .home-article .image-homeArticle {
 
 .small-title {
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
   color: #90a4be;
   position: relative;
   padding-left: 40px;
   width: fit-content;
   font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 .small-title::before {
   content: "";
@@ -155,7 +168,10 @@ main .home-article .image-homeArticle {
 .home-title {
   font-size: 3rem;
   font-weight: 500;
-  margin: 0.5rem 0 1rem;
+  margin: 0.5rem 0 0.8rem;
+}
+.home-article p {
+  margin-top: 0.8rem;
 }
 .home-title span {
   color: #4a6481;
@@ -163,4 +179,17 @@ main .home-article .image-homeArticle {
 
 .image-homeArticle img {
   width: 600px;
+}
+
+/* Services Section */
+#service-section {
+  background-color: #e8f2fc;
+  padding: 6rem 0;
+}
+.services .small-title {
+  margin: 0 auto;
+}
+.service-title {
+  text-align: center;
+  font-weight: 600;
 }
