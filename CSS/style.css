@@ -15,7 +15,6 @@ html {
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -32,22 +31,38 @@ h6 {
 }
 .section-title {
   margin: 1rem 0 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 90%;
+  }
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+.title-sectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-sectContainer .small-title {
+  padding-left: 0;
 }
 
 /* Header Section */
 .header-container {
-  width: 1200px;
-  margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
-}
-@media screen and (max-width: 1200px) {
-  .header-container {
-    width: 90%;
-  }
 }
 
 .header-logo {
@@ -95,7 +110,6 @@ h6 {
 
 /* Home Section */
 #home-section {
-  width: 1200px;
   height: 620px;
   margin: auto;
   display: flex;
@@ -103,11 +117,6 @@ h6 {
 }
 main .home-article .image-homeArticle {
   flex: 1 1;
-}
-@media screen and (max-width: 1200px) {
-  #home-section {
-    width: 90%;
-  }
 }
 
 .small-title {
@@ -121,7 +130,7 @@ main .home-article .image-homeArticle {
   font-size: 1rem;
   margin-bottom: 0.5rem;
 }
-.small-title::before {
+article .small-title::before {
   content: "";
   width: 35px;
   height: 1.5px;
@@ -184,12 +193,80 @@ main .home-article .image-homeArticle {
 /* Services Section */
 #service-section {
   background-color: #e8f2fc;
-  padding: 6rem 0;
+  padding: 4rem 0 8rem;
 }
 .services .small-title {
-  margin: 0 auto;
+  margin: 0;
+  padding-left: 8px;
 }
-.service-title {
+
+.service-card {
+  width: 560px;
+  padding: 2.5rem 1.5rem;
   text-align: center;
-  font-weight: 600;
+  background: white;
+  border-radius: 30px;
+}
+.service-card h4 {
+  margin: 1rem 0 0.5rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #212f49;
+}
+.service-card i {
+  margin: 0 auto;
+  color: #212f49;
+  padding: 0.7rem 1rem;
+  background-color: #e8f2fc;
+  border-radius: 10px;
+}
+.card-article p {
+  margin: 0.5rem 0;
+}
+
+/* Portfolio Section */
+#portfolio-section {
+  padding: 4rem 0 8rem;
+}
+.portfolio .card-container {
+  padding: 0;
+}
+.card-container .portfolio-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid 1px #90a4be;
+  background: #e8f2fc;
+}
+.portfolio-cover {
+  width: 480px;
+}
+.portfolio-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolio-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.portfolio-title h4 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+}
+.portfolio-title i {
+  transition: 0.2s ease-in-out;
+}
+.portfolio-title i:hover {
+  color: #4a6481;
+}
+
+.portfolio-article {
+  padding: 1.5rem 1rem;
+}
+.portfolio-article p {
+  font-size: 0.9rem;
+  margin: 0.8rem 0 0;
 }

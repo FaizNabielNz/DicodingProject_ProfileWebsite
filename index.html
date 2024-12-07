@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="CSS\style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -16,13 +16,12 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="header-container">
+      <div class="header-container main">
         <h1 class="header-logo">Faiz<span>Nabiel.</span></h1>
         <nav class="header-nav">
           <a class="head-nav" href="#service-section">Services</a>
-          <a class="head-nav" href="#">Experience</a>
-          <a class="head-nav" href="#">Portfolio</a>
-          <a class="head-nav" href="#">Contact Me</a>
+          <a class="head-nav" href="#portfolio-section">Portfolio</a>
+          <a class="head-nav" href="#">Contact</a>
         </nav>
 
         <!-- <div class="burgerNav">
@@ -34,7 +33,7 @@
     </header>
 
     <main>
-      <section id="home-section">
+      <section id="home-section" class="main">
         <article class="home-article">
           <h3 class="small-title">Hello,</h3>
           <h1 class="home-title">
@@ -64,34 +63,97 @@
 
       <!-- Service Section -->
       <section id="service-section">
-        <div class="services serv-container">
-          <h3 class="small-title">Get to Know About</h3>
-          <h1 class="section-title service-title">My Services</h1>
-        </div>
-
-        <div class="card-container">
-          <div class="card">
-            <i class="fas fa-solid fa-crown"></i>
-            <article class="card-article1">
-              <h4>UI/UX Design</h4>
-              <p>
-                Transform your ideas into stunning digital realities. Tailored
-                for any platform, crafted with precision, and designed for
-                seamless user experiences.
-              </p>
-            </article>
+        <div class="main services">
+          <div class="title-sectContainer">
+            <h3 class="small-title">Get to Know About</h3>
+            <h1 class="section-title">My Services</h1>
           </div>
 
-          <div class="card">
-            <i class="fas fa-solid fa-globe"></i>
-            <article class="card-article1">
-              <h4>Web Development</h4>
-              <p>
-                Passionate about building modern, fast, and user-friendly
-                websites, I turn ideas into functional digital products. Let’s
-                create something exceptional!
-              </p>
-            </article>
+          <div class="card-container">
+            <div class="service-card">
+              <i class="fa-solid fa-crown fa-2x"></i>
+              <article class="card-article">
+                <h4>UI/UX Design</h4>
+                <p>
+                  Transform your ideas into stunning digital realities. Tailored
+                  for any platform, crafted with precision, and designed for
+                  seamless user experiences.
+                </p>
+              </article>
+            </div>
+
+            <div class="service-card">
+              <i class="fa-solid fa-globe fa-2x"></i>
+              <article class="card-article">
+                <h4>Web Development</h4>
+                <p>
+                  Passionate about building modern, fast, and user-friendly
+                  websites, I turn ideas into functional digital products. Let’s
+                  create something exceptional!
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+      <section id="portfolio-section">
+        <div class="portfolio main">
+          <div class="title-sectContainer">
+            <h3 class="small-title">My Works</h3>
+            <h1 class="section-title">Recent Project</h1>
+          </div>
+
+          <div class="card-container">
+            <div class="portfolio-card">
+              <div class="portfolio-cover">
+                <img
+                  src="Aset/Screenshot 2024-12-07 203754.png"
+                  alt="Project_1"
+                />
+
+                <article class="portfolio-article">
+                  <div class="portfolio-title">
+                    <h4>Landing Page</h4>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+
+                  <p>
+                    Halaman utama dengan desain minimalis, menampilkan misi
+                    Dicoding dalam pendidikan teknologi untuk mencetak talenta
+                    digital global. Menu navigasi sederhana dan tombol Lebih
+                    Lanjut mempermudah akses informasi, dilengkapi ikon media
+                    sosial untuk konektivitas.
+                  </p>
+                </article>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <div class="portfolio-cover">
+                <img
+                  src="Aset/Screenshot 2024-12-07 203828.png"
+                  alt="Project_2"
+                />
+
+                <article class="portfolio-article">
+                  <div class="portfolio-title">
+                    <h4>Landing Page</h4>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </div>
+
+                  <p>
+                    Halaman informasi tentang Kota Bandung yang menyajikan
+                    deskripsi singkat kota sebagai metropolitan terbesar di Jawa
+                    Barat dan ibu kota provinsi. Tersedia navigasi sederhana
+                    untuk mengakses bagian Sejarah, Geografis, dan Wisata.
+                    Tampilan modern dengan warna biru cerah menonjolkan
+                    identitas Bandung sebagai "Paris van Java."
+                  </p>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
       </section>
