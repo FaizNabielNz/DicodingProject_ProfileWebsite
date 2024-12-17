@@ -100,11 +100,11 @@ h6 {
   transition: all 0.3s;
   z-index: 999;
 }
-.burger {
+.burgerNav {
   display: none;
   z-index: 999;
   position: fixed;
-  top: 35px;
+  top: 25px;
   right: 35px;
 }
 
@@ -228,6 +228,11 @@ article .small-title::before {
 #portfolio-section {
   padding: 4rem 0 8rem;
 }
+
+.portfolio .small-title {
+  margin: 0;
+}
+
 .portfolio .card-container {
   padding: 0;
 }
@@ -269,4 +274,79 @@ article .small-title::before {
 .portfolio-article p {
   font-size: 0.9rem;
   margin: 0.8rem 0 0;
+}
+
+/* Contact Section */
+#contact-section {
+  padding: 4rem 0 8rem;
+  background-color: #e8f2fc;
+}
+.contactInfo-container {
+  display: flex;
+  justify-content: space-around;
+}
+.contact .small-title {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.form {
+  margin-bottom: 1.4rem;
+  width: 200%;
+}
+input,
+textarea {
+  padding: 0.75rem 1.3rem;
+  border: 1px solid #4a6481;
+  border-radius: 5px;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #464646;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #7d7d7d;
+}
+
+.btn-submit {
+  background-color: #212f49;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 0;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.btn-submit:hover {
+  background-color: #0d1b2a;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-item i {
+  color: #0d1b2a;
+  background-color: #afc6e5;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactItem-detail h4 {
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.contactItem-detail p {
+  margin-top: 0.4rem;
 }
