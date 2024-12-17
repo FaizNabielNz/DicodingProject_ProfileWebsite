@@ -433,6 +433,14 @@ footer p {
   }
 }
 @media screen and (max-width: 850px) {
+  /* General */
+  .services .small-title,
+  .portfolio .small-title,
+  .contact .small-title {
+    font-size: 0.7rem;
+  }
+
+  /* Header */
   .burgerNav {
     display: block;
     cursor: pointer;
@@ -472,12 +480,8 @@ footer p {
     font-size: 1.7rem;
     font-weight: 600;
   }
-  .services .small-title,
-  .portfolio .small-title,
-  .contact .small-title {
-    font-size: 0.7rem;
-  }
 
+  /* Home */
   #home-section {
     flex-direction: column-reverse;
     margin-bottom: 4rem;
@@ -490,6 +494,7 @@ footer p {
     width: 420px;
   }
 
+  /* Service */
   .services .card-container {
     flex-direction: column;
     align-items: center;
@@ -499,6 +504,7 @@ footer p {
     margin-bottom: 2rem;
   }
 
+  /* Portfolio */
   .portfolio .card-container {
     flex-direction: column;
     align-items: center;
@@ -508,12 +514,11 @@ footer p {
     margin-bottom: 2rem;
   }
 
+  /* Contact */
   .contactInfo-container {
     flex-direction: column;
   }
   .form {
     width: 100%;
   }
-}
-@media screen and (max-width: 640px) {
 }
